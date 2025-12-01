@@ -103,7 +103,7 @@ export default function LaJarMenu() {
   const scrollToSection = (categoryId: any) => {
     const element = document.getElementById(categoryId);
     if (element) {
-      const offset = 80;
+      const offset = 150; // Increased offset to account for sticky header
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
 
